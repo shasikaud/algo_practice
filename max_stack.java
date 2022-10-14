@@ -8,6 +8,7 @@ public class MaxStack {
     }
     private Node maxNode;
     private Node stackHead;
+
     public void push(int x) throws Exception {
         Node newNode = new Node();
         newNode.value = x;
@@ -47,5 +48,6 @@ public class MaxStack {
             System.out.println(temp.value);
             temp = temp.nextNode;
         }
+        System.out.printf("max value: %d\n", maxNode.value);
     }
 }
