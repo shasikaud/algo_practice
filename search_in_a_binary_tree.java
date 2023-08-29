@@ -27,6 +27,12 @@ class Solution {
             if (currNode.right != null) nodes.push(currNode.right);
         }
 
+        /** OPTIMAL CODE
+        This is a binary tree, LEFT < RIGHT
+        if (val < root.val) searchBST(root.left, val);
+        if (val > root.val) searchBST(root.right, val);
+        */
+
         return null;
         
     }
